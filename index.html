@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadbolt Customs - FiveM Graphics Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="public/dbc-logo.png" alt="Deadbolt Customs Logo" class="logo">
+                <h1>Deadbolt Customs</h1>
+            </div>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#design" class="nav-link">Design</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">FiveM Graphic Design Studio</h1>
+                <p class="hero-subtitle">Locked Tight. Built Right.</p>
+                <div class="hero-buttons">
+                    <a href="#design" class="btn btn-primary">View FiveM Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Services Section -->
+    <section id="design" class="section">
+        <div class="container">
+            <h2 class="section-title">PRICING LIST</h2>
+            
+            <!-- Clothing Section -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <span class="category-icon">👕</span>
+                    <h3 class="category-title">CLOTHING</h3>
+                </div>
+                <div class="pricing-items">
+                    <div class="pricing-item">
+                        <span class="item-name">Custom Patch Design</span>
+                        <span class="item-price">$10 each</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="item-name">Kutte (Base Model + 9 Textures)</span>
+                        <span class="item-price">$20</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="item-name">Additional Kutte Texture</span>
+                        <span class="item-price">$5 each</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="item-name">Flashes / Armbands / Details</span>
+                        <span class="item-price">$5 each</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="item-name">Gang Flags (Torso or Prop)</span>
+                        <span class="item-price">$5</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="item-name">Custom Mask (Base + Texture)</span>
+                        <span class="item-price">$12</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vehicles Section -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <span class="category-icon">🚗</span>
+                    <h3 class="category-title">VEHICLES</h3>
+                </div>
+                <div class="pricing-items">
+                    <div class="pricing-item">
+                        <span class="item-name">Vehicle Debadging</span>
+                        <span class="item-price">$10 per model</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="item-name">Custom Handling Line</span>
+                        <span class="item-price">$10-$15 (depends on detail)</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="item-name">Livery</span>
+                        <span class="item-price">$10</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="item-name">Full Livery Pack (2-3 Variants)</span>
+                        <span class="item-price">$20</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="item-name">In-Vehicle Custom Textures (Plates, Decals, etc.)</span>
+                        <span class="item-price">Contact for pricing</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tattoos Section -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <span class="category-icon">⭕</span>
+                    <h3 class="category-title">TATTOOS</h3>
+                </div>
+                <div class="pricing-items">
+                    <div class="pricing-item">
+                        <span class="item-name">Custom Tattoo Design</span>
+                        <span class="item-price">$30 each</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="item-name">Full Arm/Back/Chest Tattoo Set</span>
+                        <span class="item-price">$50</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Packs Section -->
+            <div class="pricing-category">
+                <div class="category-header">
+                    <span class="category-icon">📦</span>
+                    <h3 class="category-title">PACKS</h3>
+                </div>
+                <div class="pricing-items">
+                    <div class="pricing-item">
+                        <span class="item-name">MC Pack</span>
+                        <span class="item-price">$50-75*</span>
+                    </div>
+                    <!-- Converting items without prices to included descriptions -->
+                    <div class="pricing-item included-item">
+                        <span class="item-name">• Kutte (1 model + unlimited textures)</span>
+                        <span class="item-price"></span>
+                    </div>
+                    <div class="pricing-item included-item">
+                        <span class="item-name">• Supporter Gear (5-8 items)</span>
+                        <span class="item-price"></span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="item-name">Optional Club Bike</span>
+                        <span class="item-price">$30-40</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="item-name">Gang Pack</span>
+                        <span class="item-price">$30-40</span>
+                    </div>
+                    <!-- Converting items without prices to included descriptions -->
+                    <div class="pricing-item included-item">
+                        <span class="item-name">• Bandana, Vest, Pocket Flag</span>
+                        <span class="item-price"></span>
+                    </div>
+                    <div class="pricing-item included-item">
+                        <span class="item-name">• Vehicle (with livery and/or bdeaged)</span>
+                        <span class="item-price"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Our Team @ Deadbolt Customs</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="public/plut0/pfp.png" alt="Plut0 - Owner" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-title">Plut0</h3>
+                        <p class="product-description">Owner & Lead Developer</p>
+                        <div class="developer-role">Managing operations and overseeing all projects</div>
+                        
+                        <button class="btn btn-secondary portfolio-btn" onclick="openPortfolio('plut0')">Show Portfolio/Work</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="public/sifuhlis/pfp.png" alt="Sifuhlis - Developer" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-title">Sifuhlis</h3>
+                        <p class="product-description">Developer & Co-Owner</p>
+                        <div class="developer-role">Security Dork, Script Developer, Clothing & Patches</div>
+                        
+                        <button class="btn btn-secondary portfolio-btn" onclick="openPortfolio('sifuhlis')">Show Portfolio/Work</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="public/jonesegh/pfp.png" alt="Jonesegh - Designer" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-title">Jonesegh</h3>
+                        <p class="product-description">Designer & Co-Owner</p>
+                        <div class="developer-role">Vehicles / Clothing</div>
+                        <button class="btn btn-secondary portfolio-btn" onclick="openPortfolio('jonesegh')">Show Portfolio/Work</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="public/slick/pfp.png" alt="Slick - Clothing Designer" class="product-image">
+                    <div class="product-content">
+                        <h3 class="product-title">Slick</h3>
+                        <p class="product-description">Clothing Designer</p>
+                        <div class="developer-role">Clothing</div>
+                        <button class="btn btn-secondary portfolio-btn" onclick="openPortfolio('slick')">Show Portfolio/Work</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <h4 class="review-username">osiristhegoat</h4>
+                        <div class="review-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                    </div>
+                    <p class="review-text">"Deadbolt customs made my Motorcycle Club's Patch and flashes! +1 for the speediness of DBC! & +1 For the Professionalism!"</p>
+                    <button class="btn btn-secondary review-btn" onclick="openReviewModal('osiristhegoat', '★★★★★', 'Deadbolt customs made my Motorcycle Club\'s Patch and flashes! +1 for the speediness of DBC! & +1 For the Professionalism!')">Read Full Review</button>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <h4 class="review-username">zer0merc00</h4>
+                        <div class="review-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                    </div>
+                    <p class="review-text">"I am thrilled to share my experience working with Plut0, whose incredible skills in creative clothing development and debadging vehicles truly stand out. 
+
+From the moment I engaged with Plut0, it was evident that their passion for fashion and creativity knows no bounds. Their ability to design unique and stylish clothing is nothing short of amazing. Plut0 has an exceptional eye for color, texture, and fit, resulting in garments that not only look fantastic but also convey a strong sense of individuality. Their innovative designs have a way of resonating with diverse audiences, making each piece not just a product, but a statement.
+
+What impressed me even more was Plut0's meticulous attention to detail and commitment to quality. It's clear that they are not just creating clothing; they are creating wearable art that empowers individuals to express themselves
+
+Plut0 also excels in debadging vehicles. This skill requires a steady hand and an artistic touch, and Plut0 delivers with precision and finesse. Their ability to seamlessly remove badges and emblems from vehicles transforms the look, giving them a clean, sleek appearance that turns heads. It’s a meticulous process that Plut0 approaches with professionalism, ensuring that each vehicle leaves their care looking brand new.
+
+Overall, Plut0 is a true artist in every sense of the word. Whether it’s through their stunning clothing designs or their impeccable vehicle debadging skills, their work is a testament to creative talent and dedication. I wholeheartedly recommend Plut0 to anyone looking to elevate their style or refresh their vehicle. The results will exceed your expectations!"</p>
+                    <button class="btn btn-secondary review-btn" onclick="openReviewModal('zer0merc00', '★★★★★', 'I am thrilled to share my experience working with Plut0, whose incredible skills in creative clothing development and debadging vehicles truly stand out. From the moment I engaged with Plut0, it was evident that their passion for fashion and creativity knows no bounds. Their ability to design unique and stylish clothing is nothing short of amazing. Plut0 has an exceptional eye for color, texture, and fit, resulting in garments that not only look fantastic but also convey a strong sense of individuality. Their innovative designs have a way of resonating with diverse audiences, making each piece not just a product, but a statement. What impressed me even more was Plut0\'s meticulous attention to detail and commitment to quality. It\'s clear that they are not just creating clothing; they are creating wearable art that empowers individuals to express themselves Plut0 also excels in debadging vehicles. This skill requires a steady hand and an artistic touch, and Plut0 delivers with precision and finesse. Their ability to seamlessly remove badges and emblems from vehicles transforms the look, giving them a clean, sleek appearance that turns heads. It’s a meticulous process that Plut0 approaches with professionalism, ensuring that each vehicle leaves their care looking brand new. Overall, Plut0 is a true artist in every sense of the word. Whether it’s through their stunning clothing designs or their impeccable vehicle debadging skills, their work is a testament to creative talent and dedication. I wholeheartedly recommend Plut0 to anyone looking to elevate their style or refresh their vehicle. The results will exceed your expectations!')">Read Full Review</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Interested in bringing your idea to life? Contact Deadbolt Customs today!</p>
+                    <div class="contact-item">
+                        <strong>Discord:</strong> <a href="https://discord.gg/ngYUdEqjPC">DeadBolt Customs Discord</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Deadbolt Customs</h3>
+                    <!-- Updated footer description for FiveM focus -->
+                    <p>Professional & Trustworthy FiveM Graphics/Branding Services</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Deadbolt Customs. All rights reserved. | Designed By SifuhlisScripts</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Added portfolio modal for displaying developer work -->
+    <div id="portfolioModal" class="portfolio-modal">
+        <div class="portfolio-modal-content">
+            <div class="portfolio-header">
+                <h3 id="portfolioTitle">Portfolio</h3>
+                <button class="portfolio-close" onclick="closePortfolio()">&times;</button>
+            </div>
+            <div class="portfolio-gallery" id="portfolioGallery">
+                <!-- Images will be loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Added review modal for displaying full reviews -->
+    <div id="reviewModal" class="review-modal">
+        <div class="review-modal-content">
+            <div class="review-modal-header">
+                <h3 id="reviewModalUsername">Review</h3>
+                <div id="reviewModalRating" class="review-rating"></div>
+                <button class="review-modal-close" onclick="closeReviewModal()">&times;</button>
+            </div>
+            <div class="review-modal-body">
+                <p id="reviewModalText"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
